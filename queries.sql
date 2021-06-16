@@ -75,6 +75,11 @@ WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 -- CHECK TABLE
 SELECT * FROM retirement_info;
+-- SAVES RETIREMENT_INFO QUEREY INTO CSV FILE
+COPY retirement_info TO 'C:\Users\Admin\OneDrive\Data Analytics Bootcamp\Module 7_SQL\Pewlett-Hackard-Analysis\Data\retirement_info.csv' 
+DELIMITER ',' 
+CSV HEADER;
+
 
 -- Joining departments and dept_manager tables
 SELECT departments.dept_name,
@@ -124,6 +129,11 @@ ON ri.emp_no = de.emp_no
 WHERE de.to_date = ('9999-01-01');
 SELECT * FROM current_emp;
 
+-- SAVES CURRENT_EMP QUEREY INTO CSV FILE
+COPY current_emp TO 'C:\Users\Admin\OneDrive\Data Analytics Bootcamp\Module 7_SQL\Pewlett-Hackard-Analysis\Data\current_emp.csv' 
+DELIMITER ',' 
+CSV HEADER;
+
 -- Employee count by department number
 SELECT COUNT(ce.emp_no) as EmployeeCount, de.dept_no
 INTO employee_count
@@ -134,4 +144,9 @@ GROUP BY de.dept_no
 ORDER BY de.dept_no;
 
 SELECT * FROM employee_count;
+
+-- SAVES CURRENT_EMP QUEREY INTO CSV FILE
+COPY employee_count TO 'C:\Users\Admin\OneDrive\Data Analytics Bootcamp\Module 7_SQL\Pewlett-Hackard-Analysis\Data\employee_count.csv' 
+DELIMITER ',' 
+CSV HEADER;
 
