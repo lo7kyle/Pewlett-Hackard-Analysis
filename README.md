@@ -18,11 +18,11 @@ The purpose of this analysis can be seen in real world applications. Many compan
 ### Results:
 The results were surprising since I didn't think many people would retire as much as the results showed. Seeing below we have a total of 90,393 people retiring from different departments. 
 
-![Retirees per Department](https://github.com/lo7kyle/World_Weather_Analysis/blob/main/Vacation_Search/WeatherPy_vacation_map.png) 
+![Retirees per Department](https://github.com/lo7kyle/Pewlett-Hackard-Analysis/blob/main/Resources/retireecount_per_title.PNG) 
 
 This result can be slightly skewed since this does not account employees that are currently working. We only considered people whose birthdates were between '1952-01-01' and '1955-12-31'. Using the current to_date employees, we get only a total of 33,118 retirees. Looking below at the new table we see that there are less people who are currently working that are retiring. 
 
-![Current Retirees per Department](https://github.com/lo7kyle/World_Weather_Analysis/blob/main/Vacation_Search/WeatherPy_vacation_map.png) 
+![Current Retirees per Department](https://github.com/lo7kyle/Pewlett-Hackard-Analysis/blob/main/Resources/currentretireecount_per_title.PNG) 
 
 For the second part of the challenge, we were tasked to find how many people qualified for the mentorship program. Only 1,549 people qualified for the mentorship program which makes sense since we are only account people born in 1965 and no earlier or later date which might be a little exclusive. There are some people who have the means to retire earlier, and we should also include those as well. 
 
